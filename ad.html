@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes in css</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .maincontainer {
+            background-color: blue;
+            height: 75vh;
+            width: 50%;
+            animation: myfun 3s infinite;
+            border-radius: 50%;
+        }
+
+        @keyframes myfun {
+            0% {
+                background-color: blueviolet;
+                margin-top: 0%;
+                margin-left: 0%;
+            }
+
+            25% {
+                background-color: green;
+                margin-top: 0%;
+            }
+
+            50% {
+                background-color: yellow;
+                margin-left: 50%;
+                margin-top: 15%;
+            }
+
+            75% {
+                background-color: red;
+                margin-top: 15%;
+            }
+
+            100% {
+                background-color: aqua;
+                margin-top: 15;
+            }
+        }
+    </style>
+    <div class="maincontainer"></div>
+</body>
+
+</html>     
